@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    background: #0f172a;
+    color: #e5e7eb;
+}
+
+/* HERO */
+.hero {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #020617, #0f172a);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+}
+
+.role {
+    font-size: 1.4rem;
+    color: #38bdf8;
+    margin-top: 10px;
+}
+
+.tagline {
+    margin-top: 8px;
+    color: #9ca3af;
+}
+
+.hero-links {
+    margin-top: 25px;
+}
+
+.hero-links a {
+    text-decoration: none;
+    color: #38bdf8;
+    border: 1px solid #38bdf8;
+    padding: 10px 18px;
+    margin: 0 8px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.hero-links a:hover {
+    background: #38bdf8;
+    color: #020617;
+}
+
+/* SECTIONS */
+.section {
+    padding: 70px 12%;
+    background: #0f172a;
+}
+
+.section.dark {
+    background: #020617;
+}
+
+.section h2 {
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+}
+
+/* SKILLS */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 15px;
+}
+
+.skill-card {
+    background: #020617;
+    padding: 15px;
+    text-align: center;
+    border-radius: 8px;
+    border: 1px solid #1e293b;
+}
+
+/* EXPERIENCE */
+.timeline {
+    display: grid;
+    gap: 25px;
+}
+
+.timeline-card {
+    background: #020617;
+    padding: 25px;
+    border-radius: 10px;
+    border-left: 4px solid #38bdf8;
+}
+
+.timeline-card span {
+    color: #9ca3af;
+    font-size: 0.9rem;
+}
+
+.timeline-card ul {
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+/* PROJECTS */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.project-card {
+    background: #0f172a;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #1e293b;
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-6px);
+}
+
+.project-card a {
+    display: inline-block;
+    margin-top: 15px;
+    color: #38bdf8;
+    text-decoration: none;
+}
+
+/* EDUCATION */
+.edu-card {
+    background: #020617;
+    padding: 25px;
+    border-radius: 10px;
+    border-left: 4px solid #22c55e;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #020617;
+    color: #9ca3af;
+}
