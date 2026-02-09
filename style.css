@@ -13,6 +13,9 @@ body {
 
 /* NAVBAR */
 nav {
+  position: sticky;
+  top: 0;
+  z-index: 10;
   display: flex;
   justify-content: space-between;
   padding: 20px 10%;
@@ -39,7 +42,7 @@ nav a {
 
 /* HERO */
 .hero {
-  padding: 100px 10%;
+  padding: 120px 10%;
   background: #ffffff;
 }
 
@@ -75,7 +78,7 @@ nav a {
 
 /* SECTIONS */
 .section {
-  padding: 80px 10%;
+  padding: 90px 10%;
 }
 
 .section.light {
@@ -137,4 +140,25 @@ footer {
   background: #ffffff;
   border-top: 1px solid #e5e7eb;
   color: #64748b;
+}
+
+/* ===================== */
+/* SCROLL ANIMATIONS */
+/* ===================== */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* subtle stagger */
+.exp-card.reveal,
+.project.reveal {
+  transition-delay: 0.15s;
 }
